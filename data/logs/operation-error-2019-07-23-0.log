@@ -1,0 +1,89 @@
+2019-07-23 17:48:35 | [1;31mERROR[0;39m | [1;33mrestartedMain[0;39m | [1;32morg.springframework.boot.diagnostics.LoggingFailureAnalysisReporter[0;39m | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field errorTypeService in com.xq.controller.ErrorTypeController required a bean of type 'com.xq.service.ErrorTypeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.xq.service.ErrorTypeService' in your configuration.
+
+2019-07-23 17:56:51 | [1;31mERROR[0;39m | [1;33mrestartedMain[0;39m | [1;32morg.springframework.boot.diagnostics.LoggingFailureAnalysisReporter[0;39m | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field errorTypeService in com.xq.controller.ErrorTypeController required a bean of type 'com.xq.service.ErrorTypeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.xq.service.ErrorTypeService' in your configuration.
+
+2019-07-23 18:04:14 | [1;31mERROR[0;39m | [1;33mrestartedMain[0;39m | [1;32morg.springframework.boot.diagnostics.LoggingFailureAnalysisReporter[0;39m | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.xq.controller.ErrorTypeController required a bean of type 'com.xq.service.ErrorTypeService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.xq.service.ErrorTypeService' in your configuration.
+
+2019-07-23 18:07:30 | [1;31mERROR[0;39m | [1;33mhttp-nio-8888-exec-8[0;39m | [1;32mcom.xq.util.CustomExHandler[0;39m | url http://localhost:8888/xq/qa/errtype/errortypes,msg 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'mydemo1.error_type' doesn't exist
+### The error may exist in com/xq/mapper/ErrorTypeMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select * from error_type
+### Cause: java.sql.SQLSyntaxErrorException: Table 'mydemo1.error_type' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'mydemo1.error_type' doesn't exist
+2019-07-23 18:18:41 | [1;31mERROR[0;39m | [1;33mhttp-nio-8888-exec-6[0;39m | [1;32mcom.xq.controller.ErrorTypeController[0;39m | 这是error信息
+2019-07-23 21:28:55 | [1;31mERROR[0;39m | [1;33mrestartedMain[0;39m | [1;32morg.springframework.boot.diagnostics.LoggingFailureAnalysisReporter[0;39m | 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafDefaultConfiguration.templateEngine(ThymeleafAutoConfiguration.java:153)
+
+The following method did not exist:
+
+    org.thymeleaf.spring5.SpringTemplateEngine.setRenderHiddenMarkersBeforeCheckboxes(Z)V
+
+The method's class, org.thymeleaf.spring5.SpringTemplateEngine, is available from the following locations:
+
+    jar:file:/Users/xueqiu/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.9.RELEASE/thymeleaf-spring5-3.0.9.RELEASE.jar!/org/thymeleaf/spring5/SpringTemplateEngine.class
+
+It was loaded from the following location:
+
+    file:/Users/xueqiu/.m2/repository/org/thymeleaf/thymeleaf-spring5/3.0.9.RELEASE/thymeleaf-spring5-3.0.9.RELEASE.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.thymeleaf.spring5.SpringTemplateEngine
+
